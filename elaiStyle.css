@@ -499,7 +499,7 @@ footer {
   }
 
   .faqsbuttondiv {
-    width: 80vw;
+    width: 80%;
   }
 
 
@@ -599,7 +599,7 @@ footer {
    height: 120px;
   }
   .contentdiv{
-    width: 100vh;
+    width: 100%;
     margin: 0 0 2;
   }
   .linkicon, .contentdiv{
@@ -640,7 +640,7 @@ footer {
   }
   .expandingContainer {
     position:relative;
-    width: 100vw;
+    width: 100%;
     padding-right: 0;
   }
   .card {

@@ -94,7 +94,60 @@ body {
   color: rgb(134,182,226);
 }
 
+.menuButton, .menuWrapper {
+  color: inherit;
+  background-color: inherit;
+  border: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  height: height;
+}
+.menuButton {
+  display:flex;
+  align-self: center;
+}
+.menuWrapper{
+  display:flex;
+  flex-direction: column;
+  float: left;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 
+}
+
+/* Drop down content (hidden by default) */
+.menuContent {
+  display:none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40vh;
+
+}
+/* Links inside the dropdown */
+.menuContent a {
+  display: none;
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.menuWrapper:hover .menuContent, .menuWrapper:hover .menuContent a{
+  display:flex;
+}
+
+.menuContent a:hover {
+  background-color: rgb(134,182,226);
+  color: rgb(255,255,102);
+}
+/* the mobile mode */
 .dropdownButton {
   display:none;
   border-radius: 5px;

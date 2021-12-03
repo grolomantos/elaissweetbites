@@ -19,7 +19,16 @@
       </div>
       <div id="navbar">
         <a class="mainMenu" href="index.html">Home</a>
-        <a class="mainMenu" href="products.html">Products</a>
+        <div class="mainMenu menuWrapper">  <!-- the drop down div -->
+          <button class="menuButton">Menu
+            <i class="fa fa-caret-down"></i> <!-- down arrow -->
+          </button>
+          <div class="menuContent"> <!-- buttons are inside the div -->
+            <a href="#">Menu 1</a>
+            <a href="#">Menu 2</a>
+            <a href="#">Menu 3</a>
+          </div>
+        </div>
         <a class="mainMenu" href="contact.html">Contact</a>
         <a class="mainMenu" href="aboutus.html">About Us</a>
         <a class="mainMenu" href="faqs.html">FAQs</a>
@@ -30,7 +39,7 @@
     </div>
     <div id="dropDownNav" class="active">
       <a class="dropDownNavitem" href="index.html">Home</a>
-      <a class="dropDownNavitem" id="menu" href="products.html">Products</a>
+      <a class="dropDownNavitem" href="products.html">Menu</a>
       <a class="dropDownNavitem" href="contact.html">Contact</a>
       <a class="dropDownNavitem" href="aboutus.html">About Us</a>
       <a class="dropDownNavitem" href="faqs.html">FAQs</a>

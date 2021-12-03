@@ -1,0 +1,549 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Creativity';
+  src: url('font/creativity/Creativity.eot');
+  src: url('font/creativity/Creativity.eot?#iefix') format('embedded-opentype'),
+       url('font/creativity/Creativity.svg#Creativity') format('svg'),
+       url('font/creativity/Creativity.ttf') format('truetype'),
+       url('font/creativity/Creativity.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DKLemonYellowSun';
+  src: url('font/yellowsun/DKLemonYellowSun.eot');
+  src: url('font/yellowsun/DKLemonYellowSun.eot?#iefix') format('embedded-opentype'),
+       url('font/yellowsun/DKLemonYellowSun.svg#DKLemonYellowSun') format('svg'),
+       url('font/yellowsun/DKLemonYellowSun.ttf') format('truetype'),
+       url('font/yellowsun/DKLemonYellowSun.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  background-color: #eeeeee;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  flex-direction: column;
+  color: rgb(255,255,102);
+  font-family: 'Creativity', 'DKLemonYellowSun', monospace;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* HEADER*/
+#header {
+  display: flex;
+  border-bottom: 1px solid rgb(255,255,102);
+  background-color: rgb(134,182,226);
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  height: 20vh;
+  font-family: 'DKLemonYellowSun';
+  font-size: 25px;
+}
+
+.logoContainer, .logoContainer a {
+  display: flex;
+  height: 100%;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items:center;
+
+}
+
+#elailogo {
+  object-fit: contain;
+  height: 100%;
+}
+
+
+#navbar {
+  display: flex;
+  background-color: rgb(134,182,226);
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+}
+
+.mainMenu {
+  background-color: inherit;
+  text-decoration: none;
+  display: flex;
+  padding: 10px;
+  color: rgb(255,255,102);
+  text-align: center;
+  align-items: center;
+}
+
+.mainMenu:hover {
+  background-color: rgb(255,255,102);
+  color: rgb(134,182,226);
+}
+
+
+.dropdownButton {
+  display:none;
+  border-radius: 5px;
+  color: rgb(255,255,102);
+  border-color: rgb(255,255,102);
+  background-color: rgb(134,182,226);
+}
+
+#dropDownNav{
+  height: 0;
+  display: none;
+
+}
+/* HEADER*/
+/* DISPLAY */
+.display {
+  background-image: url("pubmats/productshots/img092.jpg");
+  background-size: cover;
+  background-position: relative;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  margin:0;
+  padding:0;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.displayContainer {
+  display: flex;
+  width:75%;
+  height: 40vh;
+  flex-direction: column;
+  overflow: hidden;
+
+}
+
+.title {
+  object-fit: cover;
+  display: flex;
+  background-color: rgb(134,182,226);
+  border-radius: 10px;
+  text-align: right;
+  align-self: flex-end;
+  font-size: 40px;
+  padding: 3px;
+}
+
+.subtitle {
+  object-fit: contain;;
+  background-color: rgb(134,182,226);
+  border-radius: 10px;
+  display: flex;
+  text-align: right;
+  align-self: flex-end;
+  margin: 0;
+  font-size: 25px;
+  padding: 3px;
+}
+/* DISPLAY */
+/*CONTENT */
+main {
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+  min-height: 80vh;
+
+}
+.contentwrapper{
+  display: flex;
+  margin: 5px 5px;
+  padding: 0;
+  flex-direction: column;
+}
+
+.contentheadingdiv {
+  display: flex;
+  margin: 50px 0px 100px;
+  align-items: center;
+  height: 50px;
+  justify-content: center;
+}
+
+.contentheading {
+  background-color: rgb(134,182,226);
+  align-self: center;
+  border-radius: 30px;
+  padding: 5px;
+  font-size:  80px;;
+  cursor: default;
+}
+
+.contentdiv{
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+  align-self: center;
+  align-items: center;
+}
+
+.linkicon, .linkicon:link, .linkicon:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(134,182,226);
+  border-radius: 30px;
+  padding-right: 5px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 50px;
+}
+
+.linkicon:hover {
+  background-color: rgb(255,255, 102);
+  border: 1px solid rgb(134,182,226);
+  color: rgb(134,182,226);
+}
+
+
+.linklogo {
+  display: flex;
+  height: 100px;
+  margin-right: 10px;
+  align-self: flex-start;
+}
+
+/*CONTENT*/
+/*FAQs */
+#faqcontentdiv{
+  width: 100%;
+}
+
+.faqgroup {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.faqsbuttondiv{
+  display: flex;
+  margin-bottom: 2px;
+  justify-content: center;
+  align-self: center;
+  width: 80%;
+}
+.faqsbutton{
+  display: flex;
+  font-size: 30px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  color: inherit;
+  padding: 14px 16px;
+  background-color: rgb(134,182,226);
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0;
+  cursor: pointer;
+  width: 90%;
+  justify-content: center;
+
+}
+.faqsbutton:hover {
+  background-color: rgb(255,255, 102);
+  color: rgb(134,182,226);
+  border: 1px solid rgb(134,182,226);
+}
+
+.faqsimgdiv{
+  display: flex;
+  margin-bottom: 3px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.faq{
+  display: none;
+  width: inherit;
+  object-fit: fill;
+  max-height: 90vh;
+}
+
+.faq.active {
+  display: flex;
+}
+/*FAQs */
+/*EXPANDING CARDS */
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  overflow: hidden
+  margin: 0;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.expandingContainer {
+  display:flex;
+  height: 100%;
+  width: 90%;
+}
+
+.card {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60vh;
+  border-radius: 50px;
+  color: rgb(255,255,102);
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: flex 0.7s ease-in;
+}
+
+.card h3 {
+  display: flex;
+  font-size: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin:0;
+  padding: 3px;
+  opacity: 0;
+  background-color: rgb(134,182,226);
+  border-radius: 20px;
+}
+
+.card.active {
+  flex: 5;
+}
+
+.card.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+/* EXPANDING CARDS */
+/* FOOTER */
+footer {
+  display: flex
+  margin: 0;
+  padding: 0;
+}
+/*FOOTER with little content fix */
+
+
+#footer {
+  border-top: 1px solid rgb(255,255,102);
+  display: flex;
+  justify-content: space-between;
+  margin: 1px 0px 0px;
+  padding: 0px 10px 20px;
+  background-color: rgb(134,182,226);
+  color: rgb(255,255,102);
+  text-decoration: none;
+  width: 100%;
+
+}
+
+#footer ul, #footer ul li {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  justify-content: center;
+  align-items: flex-start;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+#footer ul li {
+  align-self: flex-start;
+  text-decoration: none;
+}
+
+#footer ul li a:link, #footer ul li a:visited {
+  text-decoration: none;
+  color: rgb(255,255,102)
+}
+
+#footer ul li a:hover, #socialsList li a:hover {
+  font-size: 20px;
+
+}
+
+.footerLogo, .footerLogo a {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+#copyright {
+  display: flex;
+}
+
+
+/*FOOTER */
+@media (max-width:720px){
+  .faqgroup {
+    width: 100%;
+  }
+
+  .faqsbuttondiv {
+    width: 80vw;
+  }
+
+
+}
+
+@media (max-width:480px){
+
+/* HEADER */
+  #header {
+    justify-content: space-around;
+    align-items:center;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  .dropdownButton {
+    display: flex;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .dropdownButton:hover {
+    background-color: rgb(255,255,102);
+    color: rgb(134,182,226);
+  }
+
+  #dropDownNav{
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color: dodgerblue;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 1s ease-in 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    transition-delay: 0s, 0s, 0.3s;
+
+  }
+
+  .dropDownNavitem {
+    border: 1px solid rgb(255,255,102);;
+    background-color: rgb(134,182,226);
+    text-decoration: none;
+    display: flex;
+    padding: 1em;
+    color: rgb(255,255,102);
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    transition: height 0.7s ease-in;
+    font-size: 25px;
+  }
+
+  .dropDownNavitem:hover {
+    background-color: rgb(255,255,102);
+    color: rgb(134,182,226);
+  }
+
+/* HEADER */
+
+/* DISPLAY */
+  .title {
+    font-size: 25px;
+    margin: 0px 0px 10px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+/* DISPLAY */
+/*CONTENT */
+  .contentheadingdiv{
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .contentheading{
+    font-size: 45px;
+  }
+
+ .linklogo {
+   height: 120px;
+  }
+  .contentdiv{
+    width: 100vh;
+    margin: 0 0 2;
+  }
+  .linkicon, .contentdiv{
+    width: 100%;
+  }
+  .faqsbuttondiv{
+    width: 100%;
+  }
+  .faqgroup {
+    width: 100%;
+  }
+  .faqsbutton{
+    width: 100%;
+  }
+  .faqsimgdiv {
+    width: 100%;
+  }
+  .faq{
+    width: 100%;
+  }
+  .contentwrapper{
+    margin: 0;
+    width: 100%;
+  }
+/* CONTENT */
+
+
+/*EXPANDING CARDS */
+  .expandingContainer {
+    width: 100vw;
+  }
+  .card:nth-of-type(4),.card:nth-of-type(5),.card:nth-of-type(6),.card:nth-of-type(7){
+    display:none;
+  }
+/*EXPANDING CARDS */
+
+/*FOOTER */
+  #footer {
+    flex-direction: column;
+  }
+/*FOOTER */
+}

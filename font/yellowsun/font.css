@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'DKLemonYellowSun';
+  src: url('DKLemonYellowSun.eot');
+  src: url('DKLemonYellowSun.eot?#iefix') format('embedded-opentype'),
+       url('DKLemonYellowSun.svg#DKLemonYellowSun') format('svg'),
+       url('DKLemonYellowSun.ttf') format('truetype'),
+       url('DKLemonYellowSun.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

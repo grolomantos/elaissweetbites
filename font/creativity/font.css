@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Creativity';
+  src: url('Creativity.eot');
+  src: url('Creativity.eot?#iefix') format('embedded-opentype'),
+       url('Creativity.svg#Creativity') format('svg'),
+       url('Creativity.ttf') format('truetype'),
+       url('Creativity.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

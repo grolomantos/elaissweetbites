@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Jan Oliver Cruz">
+    <link rel="stylesheet" href="elaiStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="pubmats/logo.png">
+    <title>Products</title>
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <div id="header">
+      <div class="logoContainer">
+        <a href="index.html"><img id="elailogo" src="pubmats/logosmall2.png" alt="Elai's"></a>
+      </div>
+      <div id="navbar">
+        <a class="mainMenu" href="index.html">Home</a>
+        <a class="mainMenu" href="products.html">Products</a>
+        <a class="mainMenu" href="contact.html">Contact</a>
+        <a class="mainMenu" href="aboutus.html">About Us</a>
+        <a class="mainMenu" href="faqs.html">FAQs</a>
+      </div>
+      <button class="dropdownButton" onclick="displayDropdown()">
+        <i class="fa fa-list"></i>
+      </button>
+    </div>
+    <div id="dropDownNav" class="active">
+      <a class="dropDownNavitem" href="index.html">Home</a>
+      <a class="dropDownNavitem" id="menu" href="products.html">Products</a>
+      <a class="dropDownNavitem" href="contact.html">Contact</a>
+      <a class="dropDownNavitem" href="aboutus.html">About Us</a>
+      <a class="dropDownNavitem" href="faqs.html">FAQs</a>
+    </div>
+    <!-- HEADER -->
+    <!-- CONTENT -->
+
+
+    <main>
+      <div class="contentwrapper">
+        <div class="contentheadingdiv">
+          <h1 class="contentheading">Products</h1>
+        </div>
+        <div class="contentdiv">
+          <button class="dropdownfaqsbutton">1<i class="fas fa-caret-down"></i></button>
+          <img class="dropdownfaqs" src="pubmats/faqs."
+        </div>
+        <div class="contentdiv">
+
+        </div>
+      </div>
+    </main>
+
+
+    <!-- CONTENT -->
+    <!--FOOTER -->
+
+        <footer>
+          <div id="footer">
+            <div class="footerLogo">
+              <a href="#header"><img id="elailogofooter" src="pubmats/logosmall2.png" alt="Elai's"></a>
+              <div id="copyright">
+                <p>© 2021</p>
+              </div>
+            </div>
+
+            <div>
+              <h3>Main Menu</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="footerItem">
+              <h3>Socials</h3>
+              <ul class="socialsList">
+                <li><a href="https://www.facebook.com/elaissweetbites" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/elaissweetbites/?fbclid=IwAR2LQPGrigpKMsc1q19cd5chQHyd44SYwDJfjirwvAsbreCGBIPFXyZE-18" target="_blank">Instagram</a></li>
+            </div>
+          </div>
+        </footer>
+    <!--FOOTER-->
+
+    <script src="elaiScript.js"></script>
+  </body>
+</html>

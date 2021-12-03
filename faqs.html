@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Jan Oliver Cruz">
+    <meta name="keywords" content="elaissweetbites, HTML, CSS, JavaScript, Elai, Ethan, Baking, Pastries, Cookies, Breads, Cakes, Cupcakes, Sweets">
+    <meta name="authors" content="Jan Oliver Cruz, Luisa Fajardo">
     <link rel="stylesheet" href="elaiStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="pubmats/logo.png">
@@ -19,7 +19,16 @@
       </div>
       <div id="navbar">
         <a class="mainMenu" href="index.html">Home</a>
-        <a class="mainMenu" href="products.html">Products</a>
+        <div class="mainMenu menuWrapper">  <!-- the drop down div -->
+          <button class="menuButton">Menu
+            <i class="fa fa-caret-down"></i> <!-- down arrow -->
+          </button>
+          <div class="menuContent"> <!-- buttons are inside the div -->
+            <a href="products.html#fb1">Cookie Menu</a>
+            <a href="products.html#fb2">Cakes and Pastries</a>
+            <a href="products.html#fb3">Breads</a>
+          </div>
+        </div>
         <a class="mainMenu" href="contact.html">Contact</a>
         <a class="mainMenu" href="aboutus.html">About Us</a>
         <a class="mainMenu" href="faqs.html">FAQs</a>
@@ -30,7 +39,7 @@
     </div>
     <div id="dropDownNav" class="active">
       <a class="dropDownNavitem" href="index.html">Home</a>
-      <a class="dropDownNavitem" id="menu" href="products.html">Products</a>
+      <a class="dropDownNavitem" href="products.html">Menu</a>
       <a class="dropDownNavitem" href="contact.html">Contact</a>
       <a class="dropDownNavitem" href="aboutus.html">About Us</a>
       <a class="dropDownNavitem" href="faqs.html">FAQs</a>
@@ -46,41 +55,38 @@
         </div>
         <div class="contentdiv" id="faqcontentdiv">
           <div class="faqgroup">
-            <div class="faqsbuttondiv">
-              <button class="faqsbutton" onclick="faq1()">How to Order? <i class="fa fa-caret-down"></i></button>
+            <div class="faqsbuttondiv" id="fb1">
+              <button class="faqsbutton" onclick="faq1()"><a href="#fb1"> How to Order? <i class="fa fa-caret-down"></i></a></button>
             </div>
             <div class="faqsimgdiv">
               <img id="faq1" class="faq" src="pubmats/faqs/orderform.png" />
             </div>
           </div>
           <div class="faqgroup">
-            <div class="faqsbuttondiv">
-              <button class="faqsbutton" onclick="faq2()">How much lead time do you need for orders?<i class="fa fa-caret-down"></i></button>
+            <div class="faqsbuttondiv" id="fb2">
+              <button class="faqsbutton" onclick="faq2()"><a href="#fb2">How much lead time do you need for orders?<i class="fa fa-caret-down"></i></a></button>
             </div>
             <div class="faqsimgdiv">
               <img id="faq2" class="faq" src="pubmats/faqs/faqs.png" />
             </div>
           </div>
           <div class="faqgroup">
-            <div class="faqsbuttondiv">
-              <button class="faqsbutton" onclick="faq3()">What are your modes of payment? <i class="fa fa-caret-down"></i></button>
+            <div class="faqsbuttondiv" id="fb3">
+              <button class="faqsbutton" onclick="faq3()"><a href="#fb3">What are your modes of payment? <i class="fa fa-caret-down"></i></a></button>
             </div>
             <div class="faqsimgdiv">
               <img id="faq3" class="faq" src="pubmats/faqs/mops.png" />
             </div>
           </div>
           <div class="faqgroup">
-            <div class="faqsbuttondiv">
-              <button class="faqsbutton" onclick="faq4()">Where are you located?<i class="fa fa-caret-down"></i></button>
+            <div class="faqsbuttondiv" id="fb4">
+              <button class="faqsbutton" onclick="faq4()"><a href="#fb4">Where are you located?<i class="fa fa-caret-down"></i></a></button>
             </div>
             <div class="faqsimgdiv">
               <img id="faq4" class="faq" src="pubmats/faqs/pin.png" />
             </div>
           </div>
 
-        </div>
-        <div class="contentdiv">
-      </div>
     </main>
 
 
@@ -100,7 +106,7 @@
               <h3>Main Menu</h3>
               <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="products.html">Menu</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="faqs.html">FAQs</a></li>

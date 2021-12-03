@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="elaiStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="pubmats/logo.png">
-    <title>Contact</title>
+    <title>FAQs</title>
   </head>
   <body>
 
@@ -45,25 +45,42 @@
       <a class="dropDownNavitem" href="faqs.html">FAQs</a>
     </div>
     <!-- HEADER -->
-
     <!-- CONTENT -->
+
 
     <main>
       <div class="contentwrapper">
         <div class="contentheadingdiv">
-          <h1 class="contentheading">Contact</h1>
+          <h1 class="contentheading">Menu</h1>
         </div>
-        <div class="contentdiv">
-          <a class="linkicon" href="https://www.facebook.com/elaissweetbites" target="_blank"><img class="linklogo" src="img/facebook.png" alt="facebook logo"> Like us on Facebook! </a>
+        <div class="contentdiv" id="faqcontentdiv">
+          <div class="faqgroup">
+            <div class="faqsbuttondiv" id="fb1">
+              <button class="faqsbutton" onclick="faq1()"><a href="#fb1" >Cookie Menu <i class="fa fa-caret-down"></i></a></button>
+            </div>
+            <div class="faqsimgdiv">
+              <img id="faq1" class="faq active" src="pubmats/menu/cookieMenu.jpg" />
+            </div>
+          </div>
+          <div class="faqgroup">
+            <div class="faqsbuttondiv" id="fb2">
+              <button class="faqsbutton" onclick="faq2()"><a href="#fb2">Cakes and Pastries<i class="fa fa-caret-down"></i></a></button>
+            </div>
+            <div class="faqsimgdiv">
+              <img id="faq2" class="faq active" src="pubmats/menu/cakesAndPastries.jpg"  />
+            </div>
+          </div>
+          <div class="faqgroup">
+            <div class="faqsbuttondiv" id="fb3">
+              <button class="faqsbutton" onclick="faq3()"><a href="#fb3">Breads<i class="fa fa-caret-down"></i></a></button>
+            </div>
+            <div class="faqsimgdiv">
+              <img id="faq3" class="faq active" src="pubmats/menu/breads.jpg" />
+            </div>
+          </div>
+
         </div>
-        <div class="contentdiv">
-          <a class="linkicon" href="https://www.instagram.com/elaissweetbites/?fbclid=IwAR2LQPGrigpKMsc1q19cd5chQHyd44SYwDJfjirwvAsbreCGBIPFXyZE-18" target="_blank"><img class="linklogo" src="img/instagram.png" alt="facebook logo"> Follow us on Instagram! </a>
-        </div>
-        <div class="contentdiv">
-          <a class="linkicon"  target="_blank"><img class="linklogo" src="img/phone.png" alt="phoneIcon"> <div id="phoneNum">#09178890985</div>
-          </a>
-        </div>
-      </div>
+
     </main>
 
 

@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Jan Oliver Cruz">
+    <meta name="keywords" content="elaissweetbites, HTML, CSS, JavaScript, Elai, Ethan, Baking, Pastries, Cookies, Breads, Cakes, Cupcakes, Sweets">
+    <meta name="authors" content="Jan Oliver Cruz, Luisa Fajardo">
     <link rel="stylesheet" href="elaiStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="pubmats/logo.png">
@@ -19,7 +19,16 @@
       </div>
       <div id="navbar">
         <a class="mainMenu" href="index.html">Home</a>
-        <a class="mainMenu" href="products.html">Products</a>
+        <div class="mainMenu menuWrapper">  <!-- the drop down div -->
+          <button class="menuButton">Menu
+            <i class="fa fa-caret-down"></i> <!-- down arrow -->
+          </button>
+          <div class="menuContent"> <!-- buttons are inside the div -->
+            <a href="products.html#fb1">Cookie Menu</a>
+            <a href="products.html#fb2">Cakes and Pastries</a>
+            <a href="products.html#fb3">Breads</a>
+          </div>
+        </div>
         <a class="mainMenu" href="contact.html">Contact</a>
         <a class="mainMenu" href="aboutus.html">About Us</a>
         <a class="mainMenu" href="faqs.html">FAQs</a>
@@ -30,7 +39,7 @@
     </div>
     <div id="dropDownNav" class="active">
       <a class="dropDownNavitem" href="index.html">Home</a>
-      <a class="dropDownNavitem" id="menu" href="products.html">Products</a>
+      <a class="dropDownNavitem" href="products.html">Menu</a>
       <a class="dropDownNavitem" href="contact.html">Contact</a>
       <a class="dropDownNavitem" href="aboutus.html">About Us</a>
       <a class="dropDownNavitem" href="faqs.html">FAQs</a>
@@ -45,10 +54,12 @@
           <h1 class="contentheading">About us</h1>
         </div>
         <div class="contentdiv">
-          <a class="linkicon" href="https://www.facebook.com/elaissweetbites" target="_blank"><img class="linklogo" src="img/facebook.png" alt="facebook logo"> Message us on Facebook! </a>
-        </div>
-        <div class="contentdiv">
-          <a class="linkicon" href="https://www.instagram.com/elaissweetbites/?fbclid=IwAR2LQPGrigpKMsc1q19cd5chQHyd44SYwDJfjirwvAsbreCGBIPFXyZE-18" target="_blank"><img class="linklogo" src="img/instagram.png" alt="facebook logo"> See our pictures on Instagram! </a>
+          <h3 id="aboutUs">Started baking for my two adorable kids...🍪 <br/>
+                    Shared the joy to relatives... </br>
+                    and Now to everyone...🧀<br/>
+                    Not just the baking, <br/>
+                    but also the love that comes with it❤ <br/>
+                        -Joy</h3>
         </div>
       </div>
     </main>
@@ -70,7 +81,7 @@
               <h3>Main Menu</h3>
               <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
+                <li><a href="products.html">Menu</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="faqs.html">FAQs</a></li>

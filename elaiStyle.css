@@ -633,12 +633,12 @@ footer {
   .mainContainer {
     flex-direction: column;
     margin-left: 0;
-    margin-right: 2px;
+    margin-right: 0px;
   }
   .expandingContainer {
     position:relative;
     width: 100vw;
-    padding-right: 10px;
+    padding-right: 0;
   }
   .card {
     margin-left: 3px;

@@ -427,8 +427,8 @@ main {
   flex: 5;
 }
 
-.card.active h3 {
-  display: flex
+.card.active h3{
+  display: flex;
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }

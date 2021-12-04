@@ -25,7 +25,6 @@
 }
 
 html {
-  overflow: hidden;
 }
 body {
   background-color: #eeeeee;
@@ -37,7 +36,6 @@ body {
   font-family: 'Creativity', 'DKLemonYellowSun', monospace;
   justify-content: space-around;
   flex-wrap: wrap;
-  overflow: hidden;
 }
 
 /* HEADER*/

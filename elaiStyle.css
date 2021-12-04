@@ -94,13 +94,13 @@ body {
   color: rgb(134,182,226);
 }
 
-.menuButton, .menuWrapper {
+.menuButton, .menuWrapper, .menuButton a{
   color: inherit;
   background-color: inherit;
   border: inherit;
   font-size: inherit;
   font-family: inherit;
-  height: height;
+  text-decoration: none;
 }
 .menuButton {
   display:flex;

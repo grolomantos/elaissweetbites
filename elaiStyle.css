@@ -24,7 +24,9 @@
   font-style: normal;
 }
 
-
+html {
+  overflow: hidden;
+}
 body {
   background-color: #eeeeee;
   margin: 0;

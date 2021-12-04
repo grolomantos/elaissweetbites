@@ -25,6 +25,7 @@
 }
 
 html {
+  overflow-x: hidden;
 }
 body {
   background-color: #eeeeee;
@@ -219,7 +220,7 @@ main {
 }
 .contentwrapper{
   display: flex;
-  margin: 5px 5px;
+  margin: 0
   padding: 0;
   flex-direction: column;
 }
@@ -242,7 +243,7 @@ main {
 }
 
 .contentdiv{
-  margin: 5px;
+  margin: 5px 0 5px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -283,7 +284,6 @@ main {
 
   display: flex;
   height: 120px;
-  margin-right: 10px;
   align-self: flex-start;
 }
 
@@ -387,6 +387,7 @@ main {
   flex-wrap: wrap;
   flex-direction: column;
   position: relative;
+  width: 100%;
 }
 .expandingContainer {
   display:flex;
@@ -403,14 +404,14 @@ main {
   border-radius: 50px;
   color: rgb(255,255,102);
   flex: 0.5;
-  margin: 10px;
+  margin: 1%;
   position: relative;
   cursor: pointer;
   transition: flex 0.7s ease-in;
 }
 
 .card h3 {
-  display: flex;
+  display: none;
   font-size: 50px;
   position: absolute;
   bottom: 20px;
@@ -427,6 +428,7 @@ main {
 }
 
 .card.active h3 {
+  display: flex
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
@@ -501,6 +503,9 @@ footer {
     width: 80%;
   }
 
+ .contentdiv{
+   width: 80%;
+ }
 
 }
 
@@ -641,10 +646,6 @@ footer {
     position:relative;
     width: 100%;
     padding-right: 0;
-  }
-  .card {
-    margin-left: 3px;
-    margin-right: 3px;
   }
 
   .card h3{

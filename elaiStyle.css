@@ -424,8 +424,13 @@ main {
   padding: 3px;
   background-color: rgb(134,182,226);
   border-radius: 20px;
-  transform: translateX(-1200px);
-  transition: transform 1s ease;
+  transform: translateX(-1300px);
+  transition: transform 1s ease, opacity 1s;
+  opacity: 0;
+}
+
+.card:nth-of-type(5) h3, .card:nth-of-type(6) h3, .card:nth-of-type(7) h3 {
+  transform: translateX(1000px);
 }
 
 .card.active {
@@ -434,7 +439,8 @@ main {
 
 .card.active h3{
   transform: translateX(0);
-  transition: all 1.5s ease;
+  opacity: 1;
+  transition: transform 1.5s ease, opacity 2s ;
 }
 /* EXPANDING CARDS */
 /* FOOTER */

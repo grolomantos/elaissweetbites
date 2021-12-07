@@ -240,8 +240,13 @@ main {
   padding: 5px;
   font-size:  80px;;
   cursor: default;
+  transition: transform 0.5s ease-in;
 }
 
+.contentheading:hover {
+  transform: rotate(360deg) scale(1.2);
+  border: 2px solid rgb(255,255,102);
+}
 .contentdiv{
   margin: 5px 0 5px;
   display: flex;
@@ -367,14 +372,14 @@ main {
   justify-content: center;
 }
 .faq{
-  display: none;
   width: inherit;
   object-fit: fill;
-  max-height: 90vh;
+  max-height: 0;
+  transition: max-height 0.5s ease-in;
 }
 
 .faq.active {
-  display: flex;
+  max-height: 90vh;
 }
 /*FAQs */
 /*EXPANDING CARDS */
@@ -411,16 +416,16 @@ main {
 }
 
 .card h3 {
-  display: none;
   font-size: 50px;
   position: absolute;
   bottom: 20px;
   left: 20px;
   margin:0;
   padding: 3px;
-  opacity: 0;
   background-color: rgb(134,182,226);
   border-radius: 20px;
+  transform: translateX(-1200px);
+  transition: transform 1s ease;
 }
 
 .card.active {
@@ -428,9 +433,8 @@ main {
 }
 
 .card.active h3{
-  display: flex;
-  opacity: 1;
-  transition: opacity 0.3s ease-in 0.4s;
+  transform: translateX(0);
+  transition: all 1.5s ease;
 }
 /* EXPANDING CARDS */
 /* FOOTER */
@@ -599,6 +603,10 @@ footer {
     font-size: 45px;
   }
 
+  .contentheading:hover {
+    transform: rotate(360deg);
+  }
+
  .linklogo {
    height: 120px;
   }
@@ -650,6 +658,7 @@ footer {
 
   .card h3{
     font-size: 25px;
+    transform: translateX(-600px);
   }
 
 /*EXPANDING CARDS */

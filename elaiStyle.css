@@ -442,8 +442,8 @@ main {
   background-color: rgba(238,255,249,0.75);
 }
 .card:nth-of-type(3) h3{
-  color: rgb(95,31,3);
-  background-color: rgba(185,248,255,0.75);
+  color: rgb(24,69,3);
+  background-color: rgba(192,229,147,0.75);
 }
 .card:nth-of-type(4) h3{
   color: rgb(121,77,2);

@@ -184,13 +184,14 @@ body {
   height: 40vh;
   flex-direction: column;
   overflow: hidden;
+  color: rgb(98,42,27);
 
 }
 
 .title {
   object-fit: cover;
   display: flex;
-  background-color: rgb(134,182,226);
+  background-color: rgba(230,230,230,0.75);
   border-radius: 10px;
   text-align: right;
   align-self: flex-end;
@@ -200,7 +201,7 @@ body {
 
 .subtitle {
   object-fit: contain;;
-  background-color: rgb(134,182,226);
+  background-color: rgba(230,230,230,0.75);
   border-radius: 10px;
   display: flex;
   text-align: right;
@@ -422,13 +423,45 @@ main {
   left: 20px;
   margin:0;
   padding: 3px;
-  background-color: rgb(134,182,226);
+  background-color: rgba(230,230,230, 0.75);
   border-radius: 20px;
   transform: translateX(-1300px);
   transition: transform 1s ease, opacity 1s;
   opacity: 0;
+  color: rgb(98,42,27);
 }
 
+/* card tag designs */
+.card:first-child h3{
+  color: rgb(89,52,44);
+  background-color: rgba(240,211,179,0.75);
+
+}
+.card:nth-of-type(2) h3{
+  color: rgb(40,27,79);
+  background-color: rgba(238,255,249,0.75);
+}
+.card:nth-of-type(3) h3{
+  color: rgb(95,31,3);
+  background-color: rgba(185,248,255,0.75);
+}
+.card:nth-of-type(4) h3{
+  color: rgb(121,77,2);
+  background-color: rgba(253,233,196,0.75);
+}
+.card:nth-of-type(5) h3{
+  color: rgb(121,64,11);
+  background-color: rgba(244,249,226,0.75);
+}
+.card:nth-of-type(6) h3{
+  color: rgb(14,5,8);
+  background-color: rgba(247,203,220,0.75);
+}
+.card:nth-of-type(7) h3{
+  color: rgb(87,43,32);
+  background-color: rgba(255,241,182,0.75);
+}
+/* card transition */
 .card:nth-of-type(5) h3, .card:nth-of-type(6) h3, .card:nth-of-type(7) h3 {
   transform: translateX(1000px);
 }

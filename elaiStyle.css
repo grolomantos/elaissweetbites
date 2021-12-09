@@ -37,13 +37,17 @@ body {
   font-family: 'Creativity', 'DKLemonYellowSun', monospace;
   justify-content: space-around;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 /* HEADER*/
 #header {
   display: flex;
   border-bottom: 1px solid rgb(255,255,102);
-  background-color: rgb(134,182,226);
+  background-image: url('https://images.unsplash.com/photo-1480380799266-582d808d748a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
   justify-content: space-around;
   margin: 0;
   padding: 0;
@@ -71,7 +75,7 @@ body {
 
 #navbar {
   display: flex;
-  background-color: rgb(134,182,226);
+  background-color: rgba(0,0,0,0);
   border: none;
   margin: 0;
   padding: 0;
@@ -79,13 +83,14 @@ body {
 }
 
 .mainMenu {
-  background-color: inherit;
+  background: inherit;
   text-decoration: none;
   display: flex;
   padding: 10px;
   color: rgb(255,255,102);
   text-align: center;
   align-items: center;
+  margin:0;
 }
 
 .mainMenu:hover {
@@ -152,12 +157,16 @@ body {
   border-radius: 5px;
   color: rgb(255,255,102);
   border-color: rgb(255,255,102);
-  background-color: rgb(134,182,226);
+  background-color: rgba(134,182,226,0);
 }
 
 #dropDownNav{
   height: 0;
   display: none;
+  background-image: url('https://images.unsplash.com/photo-1575110170630-06b930991f4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=753&q=80');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
 }
 /* HEADER*/
@@ -175,12 +184,15 @@ body {
   align-items: center;
   justify-content: center;
   height: 60vh;
+  width:100%;
 }
 
 .displayContainer {
   display: flex;
   width:75%;
-  height: 40vh;
+  height:95%;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   overflow: hidden;
   color: rgb(98,42,27);
@@ -215,7 +227,11 @@ main {
   display: flex;
   flex: wrap;
   flex-direction: column;
-  min-height: 80vh;
+  width:100%;
+  background-image: url('https://images.unsplash.com/photo-1511184150666-9bb7d41a88f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
 
 }
 .contentwrapper{
@@ -388,16 +404,20 @@ main {
   align-items: center;
   justify-content: center;
   height: 90%;
-  margin: 0;
+  margin: 5px 0;
+  padding: 0;
   flex-wrap: wrap;
   flex-direction: column;
   position: relative;
   width: 100%;
+  overflow:hidden;
 }
 .expandingContainer {
   display:flex;
-  height: 100%;
+  height: 70vh;
   width: 90%;
+  margin:0;
+  padding: 0;
 }
 
 .card {
@@ -405,11 +425,11 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 70vh;
+  height: 100%;
   border-radius: 50px;
   color: rgb(255,255,102);
   flex: 0.5;
-  margin: 1%;
+  margin: 0 0.75%;
   position: relative;
   cursor: pointer;
   transition: flex 0.7s ease-in;
@@ -477,6 +497,44 @@ main {
   transition: transform 1.5s ease, opacity 2s ;
 }
 /* EXPANDING CARDS */
+/* Article */
+/* Article Div */
+.articlediv {
+  background-image: url('https://images.unsplash.com/photo-1576919228236-a097c32a5cd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:0;
+  margin: 5px 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.article {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+.articleimg {
+  display: flex;
+  border: 3px 0px;
+  border-color: black;
+  border-style: solid;
+  height: 100%;
+  max-height: 100vh;
+  max-width: 720px;
+  width:80%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Article Div */
+
 /* FOOTER */
 footer {
   display: flex
@@ -492,7 +550,10 @@ footer {
   justify-content: space-between;
   margin: 1px 0px 0px;
   padding: 0px 10px 20px;
-  background-color: rgb(134,182,226);
+  background-image: url('https://images.unsplash.com/flagged/photo-1480412904173-931fd2ecfccb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+  background-position: left center;
+  background-clip: border-box;
+  background-attachment: contain;
   color: rgb(255,255,102);
   text-decoration: none;
   width: 100%;
@@ -554,6 +615,9 @@ footer {
  .contentdiv{
    width: 80%;
  }
+ .articleimg{
+   width: 100%;
+ }
 
 
 }
@@ -577,6 +641,7 @@ footer {
     display: flex;
     font-size: 25px;
     cursor: pointer;
+
   }
 
   .dropdownButton:hover {
@@ -606,17 +671,19 @@ footer {
 
   .dropDownNavitem {
     border: 1px solid rgb(255,255,102);;
-    background-color: rgb(134,182,226);
+    background-color: rgba(134,182,226,0);
     text-decoration: none;
     display: flex;
-    padding: 1em;
+    padding: 10%;
     color: rgb(255,255,102);
     text-align: center;
     align-items: center;
     width: 100%;
     justify-content: center;
-    transition: height 0.7s ease-in;
-    font-size: 25px;
+    transition: all .3s ease-in;
+    font-size: 30px;
+
+
   }
 
   .dropDownNavitem:hover {
@@ -707,6 +774,22 @@ footer {
   }
 
 /*EXPANDING CARDS */
+
+/* Article */
+  .articlediv{
+    width: 100%;
+    height: auto;
+  }
+
+  .article{
+    width: 100%;
+  }
+
+  .articleimg {
+    height:100%;
+  }
+
+/* Article */
 
 /*FOOTER */
   #footer {

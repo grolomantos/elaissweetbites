@@ -23,6 +23,12 @@
   font-weight: normal;
   font-style: normal;
 }
+/* Elai Colors change Rgb to change colors */
+:root {
+  --elaicolor1: rgb(134,182,226);
+  --elaicolor2: rgb(255,255,102);
+}
+
 
 html {
   overflow-x: hidden;
@@ -33,7 +39,7 @@ body {
   padding: 0;
   display:flex;
   flex-direction: column;
-  color: rgb(255,255,102);
+  color: var(--elaicolor2);;
   font-family: 'Creativity', 'DKLemonYellowSun', monospace;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -43,7 +49,7 @@ body {
 /* HEADER*/
 #header {
   display: flex;
-  border-bottom: 1px solid rgb(255,255,102);
+  border-bottom: 1px solid var(--elaicolor2);;
   background-image: url('https://images.unsplash.com/photo-1480380799266-582d808d748a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
   background-size: cover;
   background-repeat: no-repeat;
@@ -87,15 +93,15 @@ body {
   text-decoration: none;
   display: flex;
   padding: 10px;
-  color: rgb(255,255,102);
+  color: var(--elaicolor2);;
   text-align: center;
   align-items: center;
   margin:0;
 }
 
 .mainMenu:hover {
-  background-color: rgb(255,255,102);
-  color: rgb(134,182,226);
+  background-color: var(--elaicolor2);;
+  color: var(--elaicolor1);;
 }
 
 .menuButton, .menuWrapper, .menuButton a{
@@ -148,15 +154,15 @@ body {
 }
 
 .menuContent a:hover {
-  background-color: rgb(134,182,226);
-  color: rgb(255,255,102);
+  background-color: var(--elaicolor1);;
+  color: var(--elaicolor2);;
 }
 /* the mobile mode */
 .dropdownButton {
   display:none;
   border-radius: 5px;
-  color: rgb(255,255,102);
-  border-color: rgb(255,255,102);
+  color: var(--elaicolor2);;
+  border-color: var(--elaicolor2);;
   background-color: rgba(134,182,226,0);
 }
 
@@ -250,7 +256,7 @@ main {
 }
 
 .contentheading {
-  background-color: rgb(134,182,226);
+  background-color: var(--elaicolor1);;
   align-self: center;
   border-radius: 30px;
   padding: 5px;
@@ -261,7 +267,7 @@ main {
 
 .contentheading:hover {
   transform: rotate(360deg) scale(1.2);
-  border: 2px solid rgb(255,255,102);
+  border: 2px solid var(--elaicolor2);;
 }
 .contentdiv{
   margin: 5px 0 5px;
@@ -280,7 +286,7 @@ main {
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  background-color: rgb(134,182,226);
+  background-color: var(--elaicolor1);;
   border-radius: 30px;
   padding-right: 5px;
   text-decoration: none;
@@ -290,8 +296,8 @@ main {
 
 .linkicon:hover {
   background-color: rgb(255,255, 102);
-  border: 1px solid rgb(134,182,226);
-  color: rgb(134,182,226);
+  border: 1px solid var(--elaicolor1);;
+  color: var(--elaicolor1);;
 }
 
 .linkicon {
@@ -314,7 +320,7 @@ main {
 }
 
 #aboutUs {
-  background-color: rgb(134,182,226);
+  background-color: var(--elaicolor1);;
   color: rgb(255,255, 102);
   border-radius: 30px;
   width: 95%;
@@ -350,7 +356,7 @@ main {
   outline: none;
   color: inherit;
   padding: 0;
-  background-color: rgb(134,182,226);
+  background-color: var(--elaicolor1);;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0;
   cursor: pointer;
@@ -367,7 +373,7 @@ main {
   outline: none;
   color: inherit;
   padding: 14px 16px;
-  background-color: rgb(134,182,226);
+  background-color: var(--elaicolor1);;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0;
   cursor: pointer;
@@ -377,8 +383,8 @@ main {
 
 .faqsbutton a:hover {
   background-color: rgb(255,255, 102);
-  color: rgb(134,182,226);
-  border: 1px solid rgb(134,182,226);
+  color: var(--elaicolor1);;
+  border: 1px solid var(--elaicolor1);;
 }
 
 .faqsimgdiv{
@@ -427,7 +433,7 @@ main {
   background-repeat: no-repeat;
   height: 100%;
   border-radius: 50px;
-  color: rgb(255,255,102);
+  color: var(--elaicolor2);;
   flex: 0.5;
   margin: 0 0.75%;
   position: relative;
@@ -548,7 +554,7 @@ footer {
 
 
 #footer {
-  border-top: 1px solid rgb(255,255,102);
+  border-top: 1px solid var(--elaicolor2);;
   display: flex;
   justify-content: space-between;
   margin: 1px 0px 0px;
@@ -557,7 +563,7 @@ footer {
   background-position: left center;
   background-clip: border-box;
   background-attachment: contain;
-  color: rgb(255,255,102);
+  color: var(--elaicolor2);;
   text-decoration: none;
   width: 100%;
 
@@ -581,7 +587,7 @@ footer {
 
 #footer ul li a:link, #footer ul li a:visited {
   text-decoration: none;
-  color: rgb(255,255,102)
+  color: var(--elaicolor2);
 }
 
 #footer ul li a:hover, #socialsList li a:hover {
@@ -648,8 +654,8 @@ footer {
   }
 
   .dropdownButton:hover {
-    background-color: rgb(255,255,102);
-    color: rgb(134,182,226);
+    background-color: var(--elaicolor2);;
+    color: var(--elaicolor1);;
   }
 
   #dropDownNav{
@@ -673,12 +679,12 @@ footer {
   }
 
   .dropDownNavitem {
-    border: 1px solid rgb(255,255,102);;
+    border: 1px solid var(--elaicolor2);;;
     background-color: rgba(134,182,226,0);
     text-decoration: none;
     display: flex;
     padding: 10%;
-    color: rgb(255,255,102);
+    color: var(--elaicolor2);;
     text-align: center;
     align-items: center;
     width: 100%;
@@ -690,8 +696,8 @@ footer {
   }
 
   .dropDownNavitem:hover {
-    background-color: rgb(255,255,102);
-    color: rgb(134,182,226);
+    background-color: var(--elaicolor2);;
+    color: var(--elaicolor1);;
   }
 
 /* HEADER */
